@@ -19,5 +19,6 @@ http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/
             <db:parameterized-query><![CDATA[select * from flights;]]></db:parameterized-query>
         </db:select>
         <mulexml:object-to-xml-transformer doc:name="Object to XML"/>
+        <logger message="This is not a message" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
